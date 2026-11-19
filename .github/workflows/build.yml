@@ -23,7 +23,7 @@ jobs:
       - name: Package
         run: ditto -c -k --keepParent build/Folio.app Folio-arm64.zip
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: Folio-arm64
           path: Folio-arm64.zip
