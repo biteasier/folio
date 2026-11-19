@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test
+        run: swift test
+
+      - name: Build app
+        run: ./Scripts/build.sh
+
+      - name: Package
+        run: ditto -c -k --keepParent build/Folio.app Folio-arm64.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Folio-arm64
+          path: Folio-arm64.zip
+          if-no-files-found: error

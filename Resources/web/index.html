@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<!-- Documents can't run scripts, load frames, or send data anywhere: only the
+     app's own bundled scripts run, and images are the only remote content. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src file:; style-src file: 'unsafe-inline'; img-src file: data: https: http:; media-src file: https: http:; font-src file: data:; connect-src 'none'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'none'">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vendor/hl-light.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="vendor/hl-dark.css" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+<aside id="toc" aria-label="Table of contents"></aside>
+<main id="content" class="markdown-body"></main>
+<script src="app.js"></script>
+</body>
+</html>

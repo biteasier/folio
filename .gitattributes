@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.icns binary
+*.woff2 binary
+
+# Bundled third-party web libraries: keep them out of diffs and language stats
+Resources/web/vendor/** linguist-vendored -diff

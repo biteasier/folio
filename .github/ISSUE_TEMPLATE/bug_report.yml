@@ -1,0 +1,24 @@
+name: Bug report
+description: Something renders wrong, crashes, or doesn't work.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: markdown
+    attributes:
+      label: Markdown that shows the problem
+      description: The smallest piece of Markdown that reproduces it.
+      render: markdown
+  - type: input
+    id: versions
+    attributes:
+      label: Folio and macOS version
+      placeholder: Folio 1.0.0, macOS 26.1
+    validations:
+      required: true

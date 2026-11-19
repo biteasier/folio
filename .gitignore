@@ -1,0 +1,28 @@
+# Build output (releases live in GitHub Releases, not in git)
+/build/
+/.build/
+/.swiftpm/
+/dist/
+DerivedData/
+Resources/icon-1024.png
+Resources/*.iconset/
+
+# Local notes and agent files
+AGENTS.md
+CLAUDE.md
+docs/
+demo/
+
+# Secrets never belong in the repo
+.env
+.env.*
+*.p12
+*.pem
+*.key
+*.keystore
+*.jks
+*.mobileprovision
+credentials.json
+
+# OS
+.DS_Store

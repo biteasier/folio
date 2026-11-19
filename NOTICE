@@ -1,0 +1,23 @@
+Folio
+Copyright (c) 2026 biteasier. Licensed under the MIT License (see LICENSE).
+
+Folio includes or links the following third-party software:
+
+cmark-gfm (via swiftlang/swift-cmark), linked into the app
+  Copyright (c) 2014 John MacFarlane, GitHub, Inc. and contributors
+  BSD 2-Clause License. https://github.com/github/cmark-gfm
+
+highlight.js 11.11.1, Resources/web/vendor/highlight.min.js and hl-*.css
+  Copyright (c) 2006 Ivan Sagalaev
+  BSD 3-Clause License. See Resources/web/vendor/highlight.LICENSE
+
+KaTeX 0.16.22, Resources/web/vendor/katex/
+  Copyright (c) 2013-2020 Khan Academy and contributors
+  MIT License. See Resources/web/vendor/katex/LICENSE
+
+Mermaid 11.12.0, Resources/web/vendor/mermaid.min.js
+  Copyright (c) 2014-2022 Knut Sveidqvist
+  MIT License. See Resources/web/vendor/mermaid.LICENSE
+
+The GitHub alert icons in Resources/web/app.js are from Primer Octicons
+  Copyright (c) GitHub Inc. MIT License. https://github.com/primer/octicons
